@@ -14,6 +14,7 @@ Download v1.0: http://qlow.eu/goals
 - Cores
 - EnderGames / EG
 - MineWar
+- QBW
 
 ###Changelog
 **v1.0**
