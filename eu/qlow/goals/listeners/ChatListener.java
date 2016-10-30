@@ -152,10 +152,11 @@ public class ChatListener implements Listener {
 
             // Setting last calculated kills to kd
             if ( (key.equals( "Tode" ) || key.equals( "Deaths" )) && goal.getKdGoal() != -1F ) {
-                int deaths = Integer.parseInt( value );
-                deaths = deaths == 0 ? 1 : deaths;
+                float deaths = Integer.parseInt( value );
+                deaths = deaths == 0 ? 1F : deaths;
+                float requiredKillsFloat = deaths * goal.getKdGoal();
 
-                int requiredKills = ( int ) (deaths * goal.getKdGoal());
+                int requiredKills = requiredKillsFloat > (( int ) requiredKillsFloat) ? (( int ) requiredKillsFloat) + 1 : (( int ) requiredKillsFloat);
 
                 if ( goal.getLastKills() >= requiredKills ) {
                     float kdGoal = goal.getKdGoal();

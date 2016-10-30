@@ -14,7 +14,7 @@ public class Goal {
     private float lastKd;
     private int lastKills = -1;
     private int lastWins = -1;
-    private int lastCalculatedKillsToKd;
+    private int lastCalculatedKillsToKd = -1;
 
     private float kdGoal = -1F;
     private int killsGoal = -1;
