@@ -30,7 +30,8 @@ public class GoalsMod extends Module {
             "BedWars",
             "EnderGames",
             "Cores",
-            "MineWar"
+            "MineWar",
+            "QBW"
     };
 
     private final static Map<String, String> GAME_MODE_ALIASES = new HashMap<String, String>() {{
