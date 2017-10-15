@@ -21,7 +21,7 @@ public class GoalElement {
         return name;
     }
 
-    // I don't think, this is very clear, so I don't document it:
+    // I think this is very clear, so I don't document it:
 
     public Goal getMonthlyGoal() {
         return monthlyGoal;
